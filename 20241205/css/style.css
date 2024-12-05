@@ -1,0 +1,61 @@
+.inner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 120px 0;
+}
+
+.default .title {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.default .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.default .title p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+#main_content01 {
+    background: url(../images/main_curri.jpg);
+}
+
+#main_content01 .title h2 {
+    color: #ffffff;
+}
+
+#main_content01 .title p {
+    color: #ffffff;
+}
+
+#main_content01 .inner {
+    display: flex;
+    gap: 30px;
+}
+
+#main_content01 .inner .itm {
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+#main_content01 .inner .itm strong {
+    display: block;
+    padding: 24px;
+}
+
+#main_content02 {}
+
+#main_content03 {
+    background: #f9f9f9;
+}

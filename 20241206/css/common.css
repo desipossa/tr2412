@@ -1,4 +1,71 @@
+body {
+    color: #444444;
+    line-height: 1;
+}
+
+
+
 .inner {
     max-width: 1170px;
     margin: 0 auto;
+}
+
+@media (max-width:1200px) {
+    .inner {
+        max-width: 1170px;
+        margin: 0 auto;
+
+        margin: 0 15px;
+    }
+}
+
+
+
+
+.default {
+    padding: 120px 0;
+}
+
+.default .title {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.default .title p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+@media (max-width:1200px) {
+    .default {
+        padding: 120px 0;
+    }
+
+    .default .title {
+        max-width: 1170px;
+        margin: 0 auto;
+
+        margin: 0 15px;
+        margin-bottom: 40px;
+
+
+    }
+
+    .default .title h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .default .title p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 16px;
+    }
 }

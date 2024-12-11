@@ -2,3 +2,26 @@
     max-width: 1170px;
     margin: 0 auto;
 }
+
+.default {
+    padding: 80px 0;
+}
+
+.default .title {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.default .title p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+
+    opacity: 0.75;
+}

@@ -102,9 +102,112 @@
     z-index: 1;
 }
 
-.main_visual .main_visual_slide .itm01 {
+.main_visual .main_visual_slide .itm {
+    position: relative;
     height: 640px;
+}
+
+.main_visual .main_visual_slide .itm .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1410px;
+    width: 100%;
+}
+
+.main_visual .main_visual_slide .itm .slg strong {
+    display: block;
+    font-size: 80px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+}
+
+.main_visual .main_visual_slide .itm .slg p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.main_visual .main_visual_slide .itm01 {
     background: url(../images/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm02 {
+    background: url(../images/main_visual02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm03 {
+    background: url(../images/main_visual03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm04 {
+    background: url(../images/main_visual04.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .slick-arrow {
+    position: absolute;
+    z-index: 1;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 40px;
+    height: 40px;
+
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+
+}
+
+.main_visual .main_visual_slide .slick-prev {
+    top: 50%;
+    left: 120px;
+
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+.main_visual .main_visual_slide .slick-next {
+    top: 50%;
+    right: 120px;
+
+    transform: translate(0, -50%) rotate(135deg);
+}
+
+.main_visual .main_visual_slide .slick-dots {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+
+    display: flex;
+    gap: 8px;
+
+    transform: translate(-50%, 0);
+}
+
+.main_visual .main_visual_slide .slick-dots li button {
+    border: none;
+    font-size: 0;
+
+    width: 16px;
+    height: 16px;
+    background: #333;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.main_visual .main_visual_slide .slick-dots li.slick-active button {
+    width: 80px;
+    background: #f86102;
+
+
 }
 
 .main_content .inner {

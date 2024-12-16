@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+
+    <ul>
+        <li class="on">
+            <button>01</button>
+        </li>
+        <li>
+            <button>02</button>
+        </li>
+        <li>
+            <button>03</button>
+        </li>
+    </ul>
+    <div class="con">
+        <div class="itm on">01</div>
+        <div class="itm">02</div>
+        <div class="itm">03</div>
+    </div>
+
+    <style>
+        ul li.on {
+            color: tomato;
+        }
+
+        .con .itm {
+            height: 0;
+            overflow: hidden;
+        }
+
+        .con .itm.on {
+            height: auto;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $('ul>li>button').on('click', function () {
+                let idx = $(this).parent().index();
+                console.log(idx);
+                $('ul>li').removeClass('on');
+                $(this).parent().addClass('on');
+                $('.con .itm').removeClass('on');
+                $('.con .itm').eq(idx).addClass('on')
+            })
+        })
+    </script>
+
+</body>
+
+</html>

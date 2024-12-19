@@ -48,4 +48,58 @@ $(function () {
             backgroundImage: `url(./images/main_product0${idx + 1}.jpg)`
         })
     })
+});
+
+
+$(function () {
+    $('.main_promotion .control .play').on('click', function () {
+        $('.main_promotion video').trigger('play')
+    });
+    $('.main_promotion .control .pause').on('click', function () {
+        $('.main_promotion video').trigger('pause')
+    })
+});
+
+$(function () {
+    $('#bgndVideo').YTPlayer(
+        {
+            videoURL: 'https://youtu.be/eOWG-d2lP7E',
+            containment: '.main_movie',
+            showControls: false,
+            playOnlyIfVisible: true,
+        }
+    );
+
+    $('.main_movie .control .play').on('click', function () {
+        $('#bgndVideo').YTPPlay();
+    });
+    $('.main_movie .control .pause').on('click', function () {
+        $('#bgndVideo').YTPPause();
+    });
+    $('.main_movie .control .fullscreen').on('click', function () {
+        $('#bgndVideo').YTPFullscreen();
+    });
+});
+
+
+$(function () {
+    $('.to_top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000)
+    });
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        console.log(sct);
+
+        if (sct > 600) {
+            $('.to_top').addClass('on')
+        } else {
+            $('.to_top').removeClass('on')
+        }
+    });
+
+    $('#flk').on('change', function () {
+        let lnk = $(this).val();
+        if (lnk) window.open(lnk)
+    })
 })

@@ -23,6 +23,11 @@ $(function () {
             prevEl: '.main_visual .arrows .prev',
         },
 
+    });
+
+    const MAINEVENTSLIDE = new Swiper('.main_event_slide', {
+        slidesPerView: 4,
+        spaceBetween: 30,
     })
 
 });

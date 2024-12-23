@@ -1,0 +1,87 @@
+main {
+    position: relative;
+    z-index: 1;
+    height: 200vh;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+}
+
+#header.on {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#header .header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8rem;
+}
+
+#header .header_wrap h1 img {
+    height: 3.2rem;
+}
+
+#header .header_wrap .gnb>ul {
+    display: flex;
+    gap: 4rem;
+}
+
+#header .header_wrap .gnb>ul>li>a {
+    display: block;
+    line-height: 12rem;
+    color: var(--w-color);
+
+    transition: line-height 0.4s;
+}
+
+#header.on .header_wrap .gnb>ul>li>a {
+    line-height: 8rem;
+}
+
+#header .header_wrap .utils a {
+    color: var(--w-color);
+}
+
+.main_visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64rem;
+    background: url(../images/main_visual01.png) no-repeat center center/cover;
+}
+
+.main_visual .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.main_visual .title h2 {
+    color: var(--w-color)
+}
+
+.main_visual .title .desc {
+    color: var(--w-color)
+}
+
+.main_visual .title .btn_default {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.main_visual .title .btn_default:hover {
+    background: var(--w-color);
+    color: var(--b-color);
+}
+
+.main_menu .swiper-wrapper {
+    transition-timing-function: linear;
+}

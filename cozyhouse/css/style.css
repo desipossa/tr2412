@@ -256,3 +256,85 @@
 .main_store .title .desc {
     color: var(--w-color);
 }
+
+
+#footer {
+    padding: 8rem 0 20rem 0;
+    background: var(--b-color);
+}
+
+#footer .sns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+}
+
+#footer .customer {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+
+    margin-bottom: 4rem;
+}
+
+#footer .customer a {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--w-color);
+}
+
+#footer .info {
+    color: var(--w-color);
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+#footer .info ul {
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+
+    margin-bottom: 0.8rem;
+}
+
+#footer .info ul li {
+    position: relative;
+}
+
+#footer .info ul li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1.6rem;
+
+    transform: translate(-1px, -50%);
+
+    width: 2px;
+    height: 0.5em;
+
+    background: var(--w-color);
+    opacity: 0.5;
+}
+
+#footer .privacy {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+
+    margin-bottom: 4rem;
+}
+
+#footer .privacy a {
+    color: var(--w-color);
+}
+
+#footer .privacy .b {
+    font-weight: 700;
+}
+
+#footer address {
+    color: var(--w-color);
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}

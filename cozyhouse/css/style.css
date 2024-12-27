@@ -257,6 +257,17 @@
     color: var(--w-color);
 }
 
+.main_interior {}
+
+.main_interior .inner {
+    display: flex;
+    align-items: center;
+}
+
+.main_interior .inner>* {
+    flex: 1;
+}
+
 
 #footer {
     padding: 8rem 0 20rem 0;

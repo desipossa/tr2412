@@ -268,6 +268,95 @@
     flex: 1;
 }
 
+.main_interior .inner .desc_area .txt {
+    margin-top: 4rem;
+}
+
+.main_interior .inner .desc_area .itm {
+    display: none;
+}
+
+.main_interior .inner .desc_area .itm.on {
+    display: block;
+}
+
+.main_interior .inner .desc_area .itm h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+/* 슬라이드 넘치는 거 보정 */
+.main_interior .inner .itm_area {
+    /* overflow: hidden; */
+    min-width: 0;
+}
+
+.main_interior .inner .itm_area img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.main_interior .inner .itm_area .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+}
+
+.main_interior .inner .itm_area .arrows button {
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+
+    width: 5.2rem;
+    height: 5.2rem;
+
+    background: var(--b-color);
+}
+
+.main_interior .inner .itm_area .arrows .prev {
+    left: 0;
+}
+
+.main_interior .inner .itm_area .arrows .next {
+    right: 0;
+}
+
+.main_interior .inner .itm_area .arrows button svg {
+    vertical-align: middle;
+}
+
+.main_interior .inner .itm_area .page {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.main_interior .inner .itm_area .page span {
+    width: 8px;
+    height: 8px;
+    border-radius: 0;
+    background: var(--w-color);
+    opacity: 0.5;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.main_interior .inner .itm_area .page span.swiper-pagination-bullet-active {
+    width: 32px;
+    opacity: 1;
+}
+
 
 #footer {
     padding: 8rem 0 20rem 0;

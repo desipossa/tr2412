@@ -23,5 +23,30 @@ $(function () {
             delay: 0,
             disableOnInteraction: false,
         },
+    });
+
+});
+
+
+$(function () {
+    const MIS = new Swiper('.main_interior_slide', {
+        loop: true,
+
+        navigation: {
+            nextEl: '.main_interior .inner .itm_area .arrows .next',
+            prevEl: '.main_interior .inner .itm_area .arrows .prev',
+        },
+        pagination: {
+            clickable: true,
+            el: '.main_interior .inner .itm_area .page',
+        },
+
+        on: {
+            slideChangeTransitionStart: function () {
+                console.log(this.realIndex);
+                $('.main_interior .inner .desc_area .itm').removeClass('on');
+                $('.main_interior .inner .desc_area .itm').eq(this.realIndex).addClass('on');
+            }
+        }
     })
 })

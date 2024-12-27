@@ -49,4 +49,18 @@ $(function () {
             }
         }
     })
+});
+
+
+$(function () {
+    const MSS = new Swiper('.main_sns_slide', {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 8,
+        centeredSlides: true,
+    })
+});
+
+$(function () {
+    AOS.init();
 })

@@ -363,6 +363,28 @@
     background: var(--b-color);
 }
 
+#footer .banner {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+#footer .banner .itm {
+    flex: 1 0 160px;
+    padding: 0 1.6rem;
+    animation: banner 1s infinite linear;
+}
+
+@keyframes banner {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 #footer .sns {
     display: flex;
     justify-content: center;

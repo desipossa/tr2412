@@ -1,0 +1,154 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    border-bottom: 1px solid transparent;
+
+    transition: 0.4s;
+}
+
+.header.on {
+    border-bottom: 1px solid var(--line-color);
+}
+
+.header .hd_wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    margin: 0 8rem;
+}
+
+.header .hd_wrap h1 a {
+    display: block;
+    width: 16rem;
+    height: 8rem;
+    background: url(../images/logo_on.png) no-repeat left center;
+}
+
+.header.on .hd_wrap h1 a {
+    background: url(../images/logo.png) no-repeat left center;
+}
+
+.header .hd_wrap .gnb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: var(--inner-size);
+    width: 100%;
+}
+
+.header .hd_wrap .gnb>ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.header .hd_wrap .gnb>ul>li>a {
+    display: block;
+    line-height: 9.6rem;
+    font-size: 1.8rem;
+    color: var(--w-color);
+}
+
+.header.on .hd_wrap .gnb>ul>li>a {
+    color: var(--b-color);
+}
+
+.header .hd_wrap .utils {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.header .hd_wrap .utils svg {
+    stroke: var(--w-color);
+}
+
+.header.on .hd_wrap .utils svg {
+    stroke: var(--b-color);
+}
+
+.main_visual .main_visual_slide .itm {
+    position: relative;
+    height: 100vh;
+}
+
+.main_visual .main_visual_slide .itm::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: scale(1.4);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_visual .main_visual_slide .itm.swiper-slide-active::before {
+    transform: scale(1);
+
+    transition: 1s;
+}
+
+.main_visual .main_visual_slide .itm01::before {
+    background-image: url(../images/main_visual01.jpg);
+}
+
+.main_visual .main_visual_slide .itm02::before {
+    background-image: url(../images/main_visual02.jpg);
+}
+
+.main_visual .main_visual_slide .itm03::before {
+    background-image: url(../images/main_visual03.jpg);
+}
+
+.main_visual .main_visual_slide .itm .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 12rem));
+
+    max-width: var(--inner-size);
+    width: 100%;
+
+    opacity: 0;
+
+}
+
+.main_visual .main_visual_slide .itm.swiper-slide-active .slg {
+
+    transform: translate(-50%, -50%);
+    transition: 0.4s 0.4s;
+    opacity: 1;
+
+}
+
+.main_visual .main_visual_slide .itm .slg em {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-size: 4rem;
+    font-weight: 200;
+    color: var(--w-color);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.main_visual .main_visual_slide .itm .slg strong {
+    display: block;
+    margin-bottom: 3.2rem;
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: var(--w-color);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.main_visual .main_visual_slide .itm .slg p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--w-color);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}

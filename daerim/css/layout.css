@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #ff5d65;
+    --secondary-color: #d3b093;
+    --point-color: #333;
+
+    --line-color: #ddd;
+    --b-color: #333;
+    --w-color: #fff;
+
+    --inner-size: 129rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--b-color);
+}
+
+.inner {
+    max-width: var(--inner-size);
+    margin: 0 auto;
+}

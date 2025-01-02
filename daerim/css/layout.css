@@ -21,5 +21,29 @@ body {
 
 .inner {
     max-width: var(--inner-size);
+    width: 100%;
     margin: 0 auto;
+}
+
+.default {}
+
+.default .title {
+    max-width: var(--inner-size);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.default .title h2 {
+    font-size: 7.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.default .title .desc {
+    margin-top: 2.4rem;
+    line-height: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
 }

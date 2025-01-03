@@ -281,6 +281,15 @@
     display: flex;
     justify-content: center;
     gap: 4rem;
+
+    transform: translate(0, 12rem);
+    opacity: 0;
+}
+
+.main_service.on .inner {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 0.5s 1s;
 }
 
 .main_service .inner a {
@@ -321,4 +330,105 @@
 
 .main_service .inner a:nth-child(6):before {
     background-position: -800px -200px;
+}
+
+
+.main_center .tabcon_all_menu {
+    display: flex;
+    margin-bottom: 8rem;
+    border-bottom: 1px solid var(--line-color);
+    height: 8rem;
+}
+
+.main_center .tabcon_all_menu a {
+    display: block;
+    padding: 0 4.8rem;
+    background: var(--bg-color);
+    border: 1px solid var(--line-color);
+    line-height: 7.8rem;
+
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.main_center .tabcon_all_menu li~li {
+    margin-left: -1px;
+}
+
+.main_center .tabcon_all_menu a.on {
+    background: var(--w-color);
+    border-bottom: 1px solid var(--w-color);
+    color: var(--primary-color);
+}
+
+.main_center .tabcon_menu {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.main_center .tabcon_menu a {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.main_center .tabcon_menu li {
+    position: relative;
+}
+
+.main_center .tabcon_menu li~li::before {
+    content: "";
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+
+    transform: translate(-1px, -50%);
+
+    width: 2px;
+    height: 0.5em;
+
+    background: var(--line-color);
+}
+
+.main_center .tabcon_menu01 a.on {
+    color: var(--primary-color)
+}
+
+.main_center .tabcon_menu02 a.on {
+    color: var(--primary-color)
+}
+
+
+.main_center .tabcon_wrap .tabcon {
+    height: 0;
+    overflow: hidden;
+}
+
+.main_center .tabcon_wrap .tabcon.on {
+    height: auto;
+}
+
+.main_center .itm .case {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    max-width: var(--inner-size);
+    margin: 0 auto;
+}
+
+.main_center .itm .case>* {
+    flex: 1;
+}
+
+.main_center .itm .case strong {
+    display: block;
+    margin-bottom: 4rem;
+
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.main_center .itm .case p {
+    margin-bottom: 4rem;
 }

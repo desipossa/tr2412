@@ -32,4 +32,51 @@ $(function () {
             disableOnInteraction: false,
         },
     })
+});
+
+
+$(function () {
+    const mcs1 = new Swiper('.main_center_slide01', {
+        loop: true
+    });
+    const mcs2 = new Swiper('.main_center_slide02', {
+        loop: true
+    });
+
+
+    $('.main_center .tabcon_all_menu a').on('click', function (e) {
+        e.preventDefault();
+
+        let idx = $(this).parent().index();
+
+
+        $('.main_center .tabcon_all_menu a').removeClass('on');
+        $(this).addClass('on');
+
+
+        $('.main_center .tabcon_wrap .tabcon').removeClass('on');
+        $('.main_center .tabcon_wrap .tabcon').eq(idx).addClass('on');
+    })
+
+
+    $('.main_center .tabcon_menu01 a').on('click', function (e) {
+        e.preventDefault();
+
+        let idx = $(this).parent().index();
+
+        $('.main_center .tabcon_menu01 a').removeClass('on');
+        $(this).addClass('on');
+
+        mcs1.slideToLoop(idx);
+    });
+    $('.main_center .tabcon_menu02 a').on('click', function (e) {
+        e.preventDefault();
+
+        let idx = $(this).parent().index();
+
+        $('.main_center .tabcon_menu02 a').removeClass('on');
+        $(this).addClass('on');
+
+        mcs2.slideToLoop(idx)
+    });
 })

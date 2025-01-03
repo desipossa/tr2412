@@ -6,6 +6,7 @@
     --line-color: #ddd;
     --b-color: #333;
     --w-color: #fff;
+    --bg-color: #f9f9f9;
 
     --inner-size: 129rem;
 }
@@ -46,4 +47,11 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
     text-align: center;
+}
+
+.default_btn {
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+    color: var(--w-color);
+    background: var(--primary-color);
 }

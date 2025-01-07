@@ -1,0 +1,10 @@
+.main_news {}
+
+.main_news .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.main_news .inner>* {
+    flex: 1;
+}

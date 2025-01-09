@@ -273,6 +273,16 @@
     position: relative;
 }
 
+.main_content .best_tab_content .con a~a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 1px;
+    bottom: 0;
+    background: #ddd;
+}
+
 .main_content .best_tab_content .con a::before {
     content: attr(data-num);
     position: absolute;

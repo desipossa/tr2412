@@ -11,6 +11,16 @@ $(function () {
     });
 
 
+    $('.popup .con .close').on('click', function () {
+        $('.popup').hide();
+    });
+
+    $('.popup #ck').on('change', function () {
+        $('.popup').hide();
+
+    })
+
+
 });
 
 $(function () {

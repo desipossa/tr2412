@@ -460,3 +460,45 @@
     font-size: 1.4rem;
     line-height: 1.6rem;
 }
+
+.popup {
+    position: fixed;
+    top: 12rem;
+    right: 12rem;
+    z-index: 1000;
+
+    width: 32rem;
+}
+
+.popup .con {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+
+    display: flex;
+    align-items: center;
+    height: 4rem;
+
+}
+
+.popup .con>* {
+    flex: 1;
+    position: relative;
+}
+
+.popup .con .day label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+.popup .con .close {
+
+    color: #fff;
+}

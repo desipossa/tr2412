@@ -1,3 +1,24 @@
+.header {}
+
+.header .header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+    line-height: 120px;
+}
+
 .main_news {}
 
 .main_news .inner {
